@@ -33,12 +33,12 @@ class DataIngestion:
         try:
             # Reading the data
 
-            # For running in colab
+            # For running in unix-like systems
             # df = pd.read_csv(r"notebook/data/stud.csv")
 
             # For running in windows
             df = pd.read_csv(r"notebook\data\stud.csv")
-            
+
             logging.info("Read the dataset as dataframe")
 
             os.makedirs(os.path.dirname(
