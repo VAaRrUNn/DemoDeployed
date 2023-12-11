@@ -32,7 +32,13 @@ class DataIngestion:
         logging.info("Entered the data ingestion method or component")
         try:
             # Reading the data
+
+            # For running in colab
+            # df = pd.read_csv(r"notebook/data/stud.csv")
+
+            # For running in windows
             df = pd.read_csv(r"notebook\data\stud.csv")
+            
             logging.info("Read the dataset as dataframe")
 
             os.makedirs(os.path.dirname(
